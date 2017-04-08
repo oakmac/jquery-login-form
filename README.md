@@ -89,13 +89,12 @@ Use jQuery and AJAX to send a login request when the user submits the form.
   active. The user should not be able to re-submit the form or edit their
   username or password while a login attempt is ongoing.
 - If there is an error, the Login Form should show an appropriate error above
-  Login button, but below the Password field.
+  the Login button, but below the Password field.
 - If the login was successful, the user should be redirected to the homepage at
   `http://127.0.0.1:7979/index.html`
 - Jeff has instructed you to fail the login attempt and show an appropriate
   error message to the user if it takes longer than 15 seconds for the server to
-  respond. Be sure to cancel any pending AJAX requests you have made if this
-  happens.
+  respond. Be sure to cancel any pending AJAX requests if this happens!
 
 ## Phase 3 - Help Center Modals
 
