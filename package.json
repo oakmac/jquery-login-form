@@ -1,0 +1,13 @@
+{
+  "name": "jquery-login-form",
+  "version": "0.1.0",
+  "homepage": "https://github.com/oakmac/jquery-login-form",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/oakmac/jquery-login-form.git"
+  },
+  "devDependencies": {
+    "express": "4.12.3",
+    "body-parser": "1.17.1"
+  }
+}
