@@ -104,3 +104,9 @@ when a user presses the "Need help logging in?" link.
 ```
 TODO: finish writing this
 ```
+
+## Phase 4 - Create New Account Modal
+
+```
+TODO: finish writing this
+```
