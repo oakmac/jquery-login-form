@@ -4,7 +4,7 @@
 
 ## Problem Description
 
-You have just been hired at the hot new startup bloop.xyz. Tagline: Have you
+You have just been hired at the hot new startup **bloop.xyz**. Tagline: Have you
 blooped today?
 
 Jeff is the Director of UX and your new boss. After adding some user behavior
@@ -50,7 +50,8 @@ change the HTML structure as needed to accomplish this, but be sure to follow
 best practices for the Semantic Web.
 
 Jeff has given you some design guidelines:
-- The Header should always take up 100% of the width of the page.
+- The Header should always take up 100% of the width of the page and have a nice
+  background color.
 - The Login Form should be centered on the page, and never wider than 500px.
 - The Login Form should have a border and a white background that contrasts with
   the body behind it. There should be some padding on the inside of the form so
@@ -59,11 +60,11 @@ Jeff has given you some design guidelines:
   device with some slight padding on the left and right for buffer.
 - The Username and Password fields should be the same width and take up most
   of the horizontal width of the Login Form container.
-- The "Log In" button should be the primary action button on the page. It should
-  stand out visually accordingly.
-- The Help Center links should be below the Login Form and "inside" the Login
-  Form container visually. The links should be easy to read and find, but not
-  stand out.
+- The Log In button should be the primary action button on the page. It should
+  stand out visually.
+- The Help Center links should be below the Login Form, but inside the Login
+  Form container. The links should be easy to read and find, but not stand out
+  too much.
 - The Help Center links should be horizontally aligned on desktop widths and
   vertically aligned on mobile devices.
 - The Footer should take up 100% of the width of the page. The background color
@@ -96,7 +97,7 @@ Use jQuery and AJAX to send a login request when the user submits the form.
   respond. Be sure to cancel any pending AJAX requests you have made if this
   happens.
 
-## Phase 3 - Help Center modals
+## Phase 3 - Help Center Modals
 
 Jenn from the Web Copy team would like to show the contents of a Markdown file
 when a user presses the "Need help logging in?" link.
