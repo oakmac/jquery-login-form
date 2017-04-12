@@ -97,14 +97,44 @@ Use jQuery and AJAX to send a login request when the user submits the form.
   error message to the user if it takes longer than 15 seconds for the server to
   respond. Be sure to cancel any pending AJAX requests if this happens!
 
-## Phase 3 - Help Center Modals
+## Phase 3 - Help Center Modal
 
-Jenn from the Web Copy team would like to show the contents of a Markdown file
-when a user presses the "Need help logging in?" link.
+Jenn from the Web Copy team is A/B testing different content for the "Need help
+logging in?" feature. Her team is testing 4 different wordings for that section
+and wants to know which ones result in a user successfully logging in.
 
+- Pop-up a modal dialog when the user presses the "Need help logging in?" link.
+- The modal should be centered on the page.
+- The modal should be 10% from the top of the viewport, except on mobile where
+  it should be 5px from the top.
+- The modal should have a maximum width of 500px, except on mobile where it should
+  take up most of the page with some padding on the left and right (similar to the login form).
+- The modal body should be scrollable if it's content is longer than 600px in height.
+  On mobile, the modal should be a fixed distance from the bottom of the viewport such
+  that the body content is scrollable at any height.
+- There should be a gray background on the rest of the page behind the modal. If
+  the user clicks on the background the modal should go away. (NOTE: this technique is called "layering")
+- The modal should have a header bar with an "X" in the corner that allows closing
+  of the modal.
+- The modal should have a footer bar with a "Close" button horizontally centered.
+- When the modal is opened, randomly fetch one of 4 [Markdown] files located in
+  `public/md/login-help-N.md` where N is 1, 2, 3, or 4. Parse the response body using the
+  [marked] library and put the resultant HTML in the modal body.
+- Jenn would like to know what the user does after seeing the help modal. Record
+  what the user does and POST a JSON object like the following to `api/login-help`
+  upon a successful login:
+
+```json
+{
+  "helpModalWasOpened": true,
+  "helpContentNum": 2,
+  "numFailedLoginAttempts": 2,
+  "secondsTookToLogin": 25.6
+}
 ```
-TODO: finish writing this
-```
+
+[Markdown]:https://guides.github.com/features/mastering-markdown/
+[marked]:https://github.com/chjj/marked
 
 ## Phase 4 - Create New Account Modal
 
