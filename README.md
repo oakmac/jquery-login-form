@@ -117,12 +117,24 @@ and wants to know which ones result in a user successfully logging in.
 - The modal should have a header bar with an "X" in the corner that allows closing
   of the modal.
 - The modal should have a footer bar with a "Close" button horizontally centered.
-- When the modal is opened, randomly fetch one of 4 [Markdown] files located in
-  `public/md/login-help-N.md` where N is 1, 2, 3, or 4. Parse the response body using the
-  [marked] library and put the resultant HTML in the modal body.
-- Jenn would like to know what the user does after seeing the help modal. Record
-  what the user does and POST a JSON object like the following to `api/login-help`
-  upon a successful login:
+- When the modal is opened, randomly fetch one of 4 [Markdown] files located at
+  `http://127.0.0.1:7979/md/login-help-N.md` where N is 1, 2, 3, or 4. Parse the
+  response body using the [marked] library and put the resultant HTML in the modal body.
+
+[Markdown]:https://guides.github.com/features/mastering-markdown/
+[marked]:https://github.com/chjj/marked
+
+## Phase 4 - Create New Account Form
+
+> TODO: this phase is not finished yet
+
+## Phase 5 - Capture Analytics
+
+> NOTE: this section is not finished yet
+
+Jenn would like to know what the user does after seeing the help modal. Record
+what the user does and POST a JSON object like the following to `api/login-help`
+upon a successful login:
 
 ```json
 {
@@ -131,13 +143,4 @@ and wants to know which ones result in a user successfully logging in.
   "numFailedLoginAttempts": 2,
   "secondsTookToLogin": 25.6
 }
-```
-
-[Markdown]:https://guides.github.com/features/mastering-markdown/
-[marked]:https://github.com/chjj/marked
-
-## Phase 4 - Create New Account Modal
-
-```
-TODO: finish writing this
 ```
