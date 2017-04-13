@@ -20,4 +20,6 @@ reach out to our Customer Care Team using [this form].
 ## Still having trouble?
 
 If you are still having trouble logging into your account, please contact our
-customer care team at [help@bloop.xyz](mailto:help@bloop.xyz) or
+customer care team at [help@bloop.xyz](mailto:help@bloop.xyz) or visit [our help page].
+
+[our help page]:http://bloop.xyz/help
