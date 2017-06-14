@@ -11,6 +11,7 @@ app.use(bodyParser.json())
 const defaultPort = 7979
 const port = process.argv[2] ? parseInt(process.argv[2], 10) : defaultPort
 
+app.use(enableCors)
 app.use(slowItDown)
 app.use(express.static('public'))
 app.post('/api/login', loginRequest)
@@ -32,6 +33,12 @@ function slowItDown (req, res, nextFn) {
   } else {
     nextFn()
   }
+}
+
+function enableCors (req, res, nextFn) {
+  res.header('Access-Control-Allow-Origin', '*')
+  res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept')
+  nextFn()
 }
 
 const testUsers = {
