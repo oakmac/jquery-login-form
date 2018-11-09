@@ -144,3 +144,7 @@ upon a successful login:
   "secondsTookToLogin": 25.6
 }
 ```
+
+## License
+
+[ISC License](LICENSE.md)

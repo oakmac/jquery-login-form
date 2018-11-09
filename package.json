@@ -1,6 +1,7 @@
 {
   "name": "jquery-login-form",
   "version": "0.1.0",
+  "license": "ISC",
   "homepage": "https://github.com/oakmac/jquery-login-form",
   "repository": {
     "type": "git",
